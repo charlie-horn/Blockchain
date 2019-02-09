@@ -163,7 +163,7 @@ def connect_node():
                 'total_nodes' : list(blockchain.nodes)} 
     return jsonify(response), 201
 
-#Replacing the chain by the longest chain if needed
+#Replacing the chin by the lingest chain if needed
 @app.route('/replace_chain', methods = ['GET'])
 def replace_chain():
     is_chain_replaced = blockchain.replace_chain()
@@ -175,17 +175,4 @@ def replace_chain():
                     'actual_chain': blockchain.chain}
     return jsonify(response), 200
 
-app.run(host='0.0.0.0', port=5000)
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.run(host='0.0.0.0', port=5001)
