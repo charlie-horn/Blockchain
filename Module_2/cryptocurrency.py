@@ -1,3 +1,10 @@
+#### TODO s ####
+# Add a method to sync mempools across nodes so that transactions are available
+# Create asynchronous posts when transactions are posted
+# Ability to mine constantly and know when another miner has mined that block and move on
+# Make sure the target is working properly - Compare to the source code
+
+
 
 # Module 1 - Create a Blockchain
 
@@ -149,7 +156,6 @@ def add_transaction():
 
 #### Decentralizing our Blockchain ####
 
-
 # Connecting new nodes
 @app.route('/connect_node', methods = ['POST'])
 def connect_node():
@@ -176,16 +182,3 @@ def replace_chain():
     return jsonify(response), 200
 
 app.run(host='0.0.0.0', port=5000)
-
-
-
-
-
-
-
-
-
-
-
-
-
