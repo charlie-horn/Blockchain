@@ -14,4 +14,6 @@ contract coin.ico{
     // Equity mappings
     mapping(address => uint) equity_coin;
     mapping(address => uint) equity_dollar;
+
+
 }
